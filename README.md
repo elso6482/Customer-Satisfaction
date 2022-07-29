@@ -10,13 +10,18 @@ X4 = I paid a good price for my order
 X5 = I am satisfied with my courier 
 X6 = the app makes ordering easy for me
 
-# Correlation
+# Correlation Analysis
 ![image](https://user-images.githubusercontent.com/62399559/181745439-b0b95d89-99a4-421d-8b23-762d304d2f05.png)
 
-We start with correlation analysis for each attribute in the survey 
+We start with correlation analysis for each attribute in the survey. The delivery time satisifaction X1 shows correlation with the app satification and the Satisfaction with courier.  
 
 ![image](https://user-images.githubusercontent.com/62399559/181745473-cd479a37-8051-442e-a9ef-082b48f59376.png)
 
+To examine the data in different angle, we use PCA to transform the features and retain at least 90% of the variance.
+
+# Prediction models
+
+Pycaret is used to create a list of classification models. For model built with origional data, Random Forest Classifier provides the highest accuracy. For the Principal Component with 90% of the variance, Extra Tree model can produce more accurate prediction.
 
 ![image](https://user-images.githubusercontent.com/62399559/181745532-c0c441d0-6d81-4a27-8f1b-941ba343a6d0.png)
 
